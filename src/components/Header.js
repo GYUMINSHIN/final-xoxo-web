@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../Image/lifeULogo.svg";
+import logo from "../Image/Header/lifeULogo.svg";
 import headerEvent from "../Image/Header/headerEvent.svg";
 import headerService from "../Image/Header/headerService.svg";
 
