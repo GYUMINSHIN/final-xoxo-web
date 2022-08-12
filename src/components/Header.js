@@ -17,7 +17,7 @@ const Container = styled.div`
 `;
 
 const MainBox = styled.div`
-    width: 50vw;
+    width: 51vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -35,6 +35,7 @@ const MenuBox = styled.div`
 `;
 
 const MenuServiceBtn = styled.img`
+	width: 7vw;
 	cursor: pointer;
 	:hover{
 		opacity: 0.6;
@@ -42,6 +43,7 @@ const MenuServiceBtn = styled.img`
 `;
 
 const MenuEventBtn = styled.img`
+	width: 7vw;
 	cursor: pointer;
 	:hover{
 		opacity: 0.6;
