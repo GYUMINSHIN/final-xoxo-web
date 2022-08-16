@@ -25,6 +25,7 @@ const MainBox = styled.div`
 
 const Logo = styled.img`
     width: 10vw;
+	cursor: pointer;
 `;
 
 const MenuBox = styled.div`
@@ -51,13 +52,19 @@ const MenuEventBtn = styled.img`
 `;
 
 export default function Header() {
+	const goHome = () => {
+        window.location.href = "./";
+	}
+	const goEvents = () => {
+        window.location.href = "./events";
+    }
     return (
         <Container>
             <MainBox>
-                <Logo src={logo} />
+				<Logo src={logo} onClick={goHome} />
 				<MenuBox>
-					<MenuServiceBtn src={headerService} />
-					<MenuEventBtn src={headerEvent} />
+					<MenuServiceBtn src={headerService} onClick={goHome} />
+					<MenuEventBtn src={headerEvent} onClick={goEvents} />
 				</MenuBox>
             </MainBox>
         </Container>
