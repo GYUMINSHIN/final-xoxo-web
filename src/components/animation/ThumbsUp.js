@@ -32,13 +32,11 @@ export default function ThumbsUp() {
 			x: "23vw",
 			opacity: 0,
 			rotatez: "-20deg",
-			width: "0vw",
 		},
 		to: {
 			x: start ? "0vw" : "23vw",
 			opacity: start ? 1 : 0,
 			rotatez: "-20deg",
-			width: start ? "23vw" : "0vw",
 		},
 		config: config.wobbly,
 	})
