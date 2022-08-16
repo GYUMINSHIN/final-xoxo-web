@@ -4,8 +4,7 @@ import Header from "../../components/Header";
 import Page01 from "./Page01";
 import Page02 from "./Page02";
 import Page03 from "./Page03";
-import Page04 from "./Page04";
-import Page05 from "./Page05";
+import Info from "../../components/Info";
 
 const Container = styled.div`
 	width: 100%;
@@ -18,8 +17,7 @@ export default function Mainpage() {
 			<Page01 />
 			<Page02 />
 			<Page03 />
-			<Page04 />
-			<Page05 />
+			<Info />
 		</Container>
 	);
 }
