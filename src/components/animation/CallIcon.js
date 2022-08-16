@@ -15,11 +15,11 @@ export default function CallIcon() {
 	const callbounce = useSpring({
 		loop: { reverse: true },
 		from: {
-			y: 0,
+			y: "0vw",
 			rotateZ: 0,
 		},
 		to: {
-			y: 10,
+			y: "1vw",
 			rotateZ: 20,
 		},
 		config: {

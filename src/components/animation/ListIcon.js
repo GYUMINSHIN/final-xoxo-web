@@ -15,10 +15,10 @@ export default function ListIcon() {
 	const listbounce = useSpring({
 		loop: { reverse: true },
 		from: {
-			y: 0
+			y: "0vw"
 		},
 		to: {
-			y: 10
+			y: "0.7vw"
 		},
 		config: {
 			duration:1000

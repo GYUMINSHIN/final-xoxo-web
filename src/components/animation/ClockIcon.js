@@ -15,10 +15,10 @@ export default function ClockIcon() {
 	const clockbounce = useSpring({
 		loop: { reverse: true },
 		from: {
-			y: 0
+			y: "0vw"
 		},
 		to: {
-			y: 20
+			y: "1.5vw"
 		},
 		config: {
 			duration:3000

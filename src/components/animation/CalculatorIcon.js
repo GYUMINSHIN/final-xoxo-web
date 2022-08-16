@@ -15,11 +15,11 @@ export default function CalculatorIcon() {
 	const calculatorbounce = useSpring({
 		loop: { reverse: true },
 		from: {
-			y: 0,
+			y: "0vw",
 			rotateZ: 0
 		},
 		to: {
-			y: 30,
+			y: "2vw",
 			rotateZ: -20,
 		},
 		config: {

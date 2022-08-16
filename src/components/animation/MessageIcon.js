@@ -15,15 +15,15 @@ export default function MessageIcon() {
 	const messagebounce = useSpring({
 		loop: { reverse: true },
 		from: {
-			y: 0,
+			y: "0vw",
 			rotateZ: 0,
 		},
 		to: {
-			y: 20,
+			y: "1vw",
 			rotateZ: 10,
 		},
 		config: {
-			duration:3000
+			duration:2000
 		}
 	});
 	
