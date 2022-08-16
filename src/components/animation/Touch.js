@@ -78,7 +78,7 @@ export default function Touch() {
 	useChain([fingerTouchRef, iconRef], [0, 0.4]);
 
 	return (
-		<MainBox onMouseEnter={()=>{setStart(true)}} onMouseLeave={()=>{setStart(false)}}>
+		<MainBox onMouseEnter={()=>{setStart(true)}}>
 			<PhoneImage src={phone} />
 			<Finger as={animated.img} src={finger} style={{ ...fingertouch }} />
 			<Heart as={animated.img} src={heart} style={{...icon}} />
