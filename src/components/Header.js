@@ -53,10 +53,10 @@ const MenuEventBtn = styled.img`
 
 export default function Header() {
 	const goHome = () => {
-        window.location.href = "./";
+        window.location.href = "/";
 	}
 	const goEvents = () => {
-        window.location.href = "./events";
+        window.location.href = "/events";
     }
     return (
         <Container>

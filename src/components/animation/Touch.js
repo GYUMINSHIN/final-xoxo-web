@@ -48,11 +48,11 @@ export default function Touch() {
 	const fingerTouchRef = useSpringRef();
 	const fingertouch = useSpring({
 		from: {
-			y: 0,
+			y: "0vw",
 			rotatez: 0,
 		},
 		to: {
-			y: start ? 50 : 0,
+			y: start ? "4vw" : "0vw",
 			rotatez: start ? 20 : 0,
 		},
 		config: config.gentle,
@@ -62,12 +62,12 @@ export default function Touch() {
 	const iconRef = useSpringRef();
 	const icon = useSpring({
 		from: {
-			y: 50,
+			y: "4vw",
 			scale: 0,
 			opacity: 0,
 		},
 		to: {
-			y: start ? 0 : 50,
+			y: start ? "0vw" : "4vw",
 			scale: start ? 1 : 0,
 			opacity: start ? 1 : 0,
 		},

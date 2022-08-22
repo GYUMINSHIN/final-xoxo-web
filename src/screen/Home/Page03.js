@@ -43,13 +43,17 @@ const ArrowBtn = styled.img`
 `;
 
 export default function Page03() {
+	const goEvents = () => {
+        window.location.href = "/events";
+	}
+	
 	return (
 		<Container>
 			<TopBlackBox src={tradeAfterChat} />
 			<MiddleImg src={cheering} />
 			<BottomBlackBox src={moreInfo} />
 			<Btn>
-				<ArrowBtn src={arrowBtn} />
+				<ArrowBtn src={arrowBtn} onClick={goEvents} />
 			</Btn>
 		</Container>
 		
