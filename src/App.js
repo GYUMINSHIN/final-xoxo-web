@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Mainpage from "./screen/Home/Mainpage";
-import EventsHome from "./screen/Events/EventsHome";
-import ChickenEvent from "./screen/Events/ChickenEvent";
+import Mainpage from "./page/Home/Mainpage";
+import EventsHome from "./page/Events/EventsHome";
+import ChickenEvent from "./page/Events/ChickenEvent";
 import "./App.css";
 
 export default function App() {
