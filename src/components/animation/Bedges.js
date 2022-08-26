@@ -6,12 +6,19 @@ import lock from "../../Image/Home/page02-lockIcon.svg";
 import coin from "../../Image/Home/page02-coinIcon.svg";
 import medal from "../../Image/Home/page02-medalIcon.svg";
 
+const media = {
+    phone: "@media(max-width: 500px)",
+};
+
 const MainBox = styled.div`
     width: 50vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	${media.phone}{
+		width: 85%;
+	}
 `;
 
 const Box = styled.div`
@@ -22,18 +29,30 @@ const Box = styled.div`
 
 const WhyLifeUImage = styled.img`
 	width: 20vw;
+	${media.phone}{
+		width: 45vw;
+	}
 `;
 
 const Lock = styled.img`
 	width: 15vw;
+	${media.phone}{
+		width: 25vw;
+	}
 `;
 
 const Coin = styled.img`
 	width: 15vw;
+	${media.phone}{
+		width: 25vw;
+	}
 `;
 
 const Medal = styled.img`
 	width: 15vw;
+	${media.phone}{
+		width: 25vw;
+	}
 `;
 
 export default function Bedges() {

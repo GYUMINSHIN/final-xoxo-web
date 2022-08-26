@@ -8,6 +8,7 @@ import Info from "../../components/Info";
 
 const Container = styled.div`
 	width: 100%;
+	overflow: hidden;
 `;
 
 export default function Mainpage() {

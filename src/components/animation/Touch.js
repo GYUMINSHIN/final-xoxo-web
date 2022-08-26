@@ -6,11 +6,18 @@ import phone from "../../Image/Home/page02-phone1.svg";
 import star from "../../Image/Home/page02-starIcon.svg";
 import heart from "../../Image/Home/page02-heartIcon.svg";
 
+const media = {
+    phone: "@media(max-width: 500px)",
+};
+
 const MainBox = styled.div`
     width: 50vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	${media.phone}{
+		width: 80%;
+	}
 `;
 
 const PhoneImage = styled.img`
@@ -23,6 +30,11 @@ const Finger = styled.img`
 	position: absolute;
 	top: 22vw;
 	left: 33vw;
+	${media.phone}{
+		width: 50vw;
+		top: 25vw;
+		left: 20vw;
+	}
 `;
 
 const Heart = styled.img`
@@ -31,6 +43,11 @@ const Heart = styled.img`
 	position: absolute;
 	top: 33vw;
 	right: 23vw;
+	${media.phone}{
+		width: 15vw;
+		top: 45vw;
+		right: 6vw;
+	}
 `;
 
 const Star = styled.img`
@@ -39,6 +56,11 @@ const Star = styled.img`
 	position: absolute;
 	top: 17vw;
 	left: 45vw;
+	${media.phone}{
+		width: 17vw;
+		top: 20vw;
+		right: 30vw;
+	}
 `;
 
 export default function Touch() {

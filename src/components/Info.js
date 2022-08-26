@@ -13,6 +13,10 @@ import blog from "../Image/Home/Info-blog.svg";
 import instagram from "../Image/Home/Info-instagram.svg";
 import facebook from "../Image/Home/Info-facebook.svg";
 
+const media = {
+    phone: "@media(max-width: 500px)",
+};
+
 const Container = styled.div`
 	width: 100%;
 	background-color: #f4f4f4;
@@ -22,11 +26,16 @@ const Container = styled.div`
 `;
 
 const MainBox = styled.div`
-    width: 65vw;
+    width: 50vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 10vw;
+	${media.phone}{
+		width: 85vw;
+		margin-bottom: 20vw;
+		margin-top: 15vw;
+	}
 `;
 
 const NotionBox = styled.div`
@@ -34,6 +43,9 @@ const NotionBox = styled.div`
 	display: flex;
 	justify-content: space-between;
 	margin-top: 3vw;
+	${media.phone}{
+		width: 85vw;
+	}
 `;
 
 const NotionBtn = styled.img`
@@ -41,6 +53,9 @@ const NotionBtn = styled.img`
 	cursor: pointer;
 	:hover{
 		opacity: 0.7;
+	}
+	${media.phone}{
+		width: 15vw;
 	}
 `;
 
@@ -53,6 +68,9 @@ const CompanyInfo = styled.img`
 	width: 30vw;
 	margin-left: 0.5vw;
 	margin-top: 4vw;
+	${media.phone}{
+		width: 70vw;
+	}
 `;
 
 const Mail = styled.img`
@@ -60,6 +78,9 @@ const Mail = styled.img`
 	position: absolute;
 	bottom: 0vw;
 	left: 0.5vw;
+	${media.phone}{
+		width: 33vw;
+	}
 `;
 
 const Cs = styled.img`
@@ -67,6 +88,10 @@ const Cs = styled.img`
 	position: absolute;
 	bottom: 0vw;
 	left: 16vw;
+	${media.phone}{
+		width: 33vw;
+		left: 36vw;
+	}
 `;
 
 const SNSBox = styled.div`
@@ -84,6 +109,9 @@ const SNSBtn = styled.img`
 	cursor: pointer;
 	:hover{
 		opacity: 0.6;
+	}
+	${media.phone}{
+		width: 8vw;
 	}
 `;
 
@@ -123,7 +151,6 @@ export default function Info() {
 					<SNSBtn src={facebook} onClick={facebook_btn} />
 				</SNSBox>
 			</MainBox>
-
 		</Container>
 		
 	)

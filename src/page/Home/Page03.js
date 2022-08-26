@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import tradeAfterChat from "../../Image/Home/page03-tradeAfterChat.svg";
-import moreInfo from "../../Image/Home/page03-moreInfo.svg";
-import cheering from "../../Image/Home/page03-cheering.svg";
+import backgroundImg from "../../Image/Home/page03-backgroundImg.svg";
+import backgroundImgPhone from "../../Image/Home/page03-backgroundImgPhone.svg";
 import arrowBtn from "../../Image/Home/page03-arrowBtn.svg";
+
+const media = {
+    phone: "@media(max-width: 500px)",
+};
 
 const Container = styled.div`
 	width: 100%;
@@ -11,16 +14,19 @@ const Container = styled.div`
 	background-color: #2d2d2d;
 `;
 
-const TopBlackBox = styled.img`
+const BackgroundImg = styled.div`
 	width: 100%;
-`;
-
-const MiddleImg = styled.img`
-	width: 100%;
-`;
-
-const BottomBlackBox = styled.img`
-	width: 100%;
+	height: 53.5vw;
+	margin-top: 4vw;
+	background-image: url(${backgroundImg});
+	background-size: contain;
+	position: relative;
+	${media.phone}{
+		background-image: url(${backgroundImgPhone});
+		margin-top: 15vw;
+		height: 100vw;
+		background-size: contain;
+	}
 `;
 
 const Btn = styled.button`
@@ -36,10 +42,17 @@ const Btn = styled.button`
 	:hover{
 		opacity: 0.5;
 	}
+	${media.phone}{
+		bottom: 9vw;
+		right: 32vw;
+	}
 `;
 
 const ArrowBtn = styled.img`
 	width: 6vw;
+	${media.phone}{
+		width: 10vw;
+	}
 `;
 
 export default function Page03() {
@@ -49,12 +62,11 @@ export default function Page03() {
 	
 	return (
 		<Container>
-			<TopBlackBox src={tradeAfterChat} />
-			<MiddleImg src={cheering} />
-			<BottomBlackBox src={moreInfo} />
-			<Btn>
-				<ArrowBtn src={arrowBtn} onClick={goEvents} />
-			</Btn>
+			<BackgroundImg>
+				<Btn>
+					<ArrowBtn src={arrowBtn} onClick={goEvents} />
+				</Btn>
+			</BackgroundImg>
 		</Container>
 		
 	)

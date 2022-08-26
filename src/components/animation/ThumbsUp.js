@@ -4,12 +4,19 @@ import styled from "styled-components";
 import phone2 from "../../Image/Home/page02-phone2.svg";
 import thumbsUp from "../../Image/Home/page02-thumbsUp.svg";
 
+const media = {
+    phone: "@media(max-width: 500px)",
+};
+
 const MainBox = styled.div`
     width: 50vw;
 	display: flex;
 	position: relative;
 	align-items: center;
 	justify-content: center;
+	${media.phone}{
+		width: 85%;
+	}
 `;
 
 const PhoneImage = styled.img`
@@ -22,6 +29,10 @@ const Thumbs = styled.img`
 	position: absolute;
 	bottom: 0vw;
 	left: 13vw;
+	${media.phone}{
+		width: 45vw;
+		left: 15vw;
+	}
 `;
 
 export default function ThumbsUp() {

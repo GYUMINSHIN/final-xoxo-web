@@ -3,12 +3,21 @@ import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 import message from "../../Image/Home/page01-messageIcon.svg";
 
+const media = {
+    phone: "@media(max-width: 500px)",
+};
+
 const Icon = styled.img`
 	width: 17vw;
 	display: flex;
 	position: absolute;
-	top: 5vw;
+	top: 1vw;
 	right: 25vw;
+	${media.phone}{
+		width: 25vw;
+		top: 5vw;
+		right: 15vw;
+	}
 `;
 
 export default function MessageIcon() {

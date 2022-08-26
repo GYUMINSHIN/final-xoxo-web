@@ -7,8 +7,13 @@ import ListIcon from "../../components/animation/ListIcon";
 import LifeUIcon from "../../components/animation/LifeUIcon";
 import CalculatorIcon from "../../components/animation/CalculatorIcon";
 import backgroundImage from "../../Image/Home/page01-backgroundImg.svg";
+import backgroundImagePhone from "../../Image/Home/page01-backgroundImgPhone.svg";
 import apple from "../../Image/Home/page01-appstore.svg";
 import google from "../../Image/Home/page01-playstore.svg";
+
+const media = {
+    phone: "@media(max-width: 500px)",
+};
 
 const Container = styled.div`
 	width: 100%;
@@ -16,6 +21,13 @@ const Container = styled.div`
 	margin-top: 4vw;
 	background-image: url(${backgroundImage});
 	background-size: contain;
+	position: relative;
+	${media.phone}{
+		background-image: url(${backgroundImagePhone});
+		margin-top: 15vw;
+		height: 120vw;
+		background-size: contain;
+	}
 `;
 
 const MainBox = styled.div`
@@ -29,11 +41,16 @@ const GoogleBtn = styled.img`
 	width: 13vw;
 	display: flex;
 	position: absolute;
-	top: 27vw;
+	top: 23vw;
 	left: 37vw;
 	cursor: pointer;
 	:hover{
 		opacity: 0.9;
+	}
+	${media.phone}{
+		width: 25vw;
+		top: 45vw;
+		left: 25vw;
 	}
 `;
 
@@ -41,11 +58,16 @@ const AppleBtn = styled.img`
 	width: 13vw;
 	display: flex;
 	position: absolute;
-	top: 27vw;
+	top: 23vw;
 	right: 36vw;
 	cursor: pointer;
 	:hover{
 		opacity: 0.9;
+	}
+	${media.phone}{
+		width: 25vw;
+		top: 45vw;
+		right: 25vw;
 	}
 `;
 export default function Page01() {

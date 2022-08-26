@@ -4,6 +4,10 @@ import logo from "../Image/Header/lifeULogo.svg";
 import headerEvent from "../Image/Header/headerEvent.svg";
 import headerService from "../Image/Header/headerService.svg";
 
+const media = {
+    phone: "@media(max-width: 500px)",
+};
+
 const Container = styled.div`
     width: 100%;
     height: 4vw;
@@ -14,6 +18,9 @@ const Container = styled.div`
     top: 0px;
     background-color: white;
 	z-index: 100;
+	${media.phone}{
+		height: 15vw;
+	}
 `;
 
 const MainBox = styled.div`
@@ -21,11 +28,17 @@ const MainBox = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	${media.phone}{
+		width: 85%;
+	}
 `;
 
 const Logo = styled.img`
     width: 10vw;
 	cursor: pointer;
+	${media.phone}{
+		width: 30vw;
+	}
 `;
 
 const MenuBox = styled.div`
@@ -33,6 +46,9 @@ const MenuBox = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	${media.phone}{
+		width: 40vw;
+	}
 `;
 
 const MenuServiceBtn = styled.img`
@@ -41,6 +57,9 @@ const MenuServiceBtn = styled.img`
 	:hover{
 		opacity: 0.6;
 	}
+	${media.phone}{
+		width: 20vw;
+	}
 `;
 
 const MenuEventBtn = styled.img`
@@ -48,6 +67,9 @@ const MenuEventBtn = styled.img`
 	cursor: pointer;
 	:hover{
 		opacity: 0.6;
+	}
+	${media.phone}{
+		width: 20vw;
 	}
 `;
 
